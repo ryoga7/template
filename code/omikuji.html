@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <button id="id-btn">おみくじ</button>
+        <script>
+            btn = document.getElementById("id-btn")
+            btn.addEventListener("click", button)
+
+            function button(){
+                now = new Date().getTime()
+                omikuji = now % 3
+
+                if(omikuji == 0){
+                    alert("大吉")
+                }else if(omikuji == 1){
+                    alert("中吉")
+                }else{
+                    alert("小吉")
+                }
+            }
+        </script>
+    </body>
+</html>
